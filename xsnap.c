@@ -55,7 +55,7 @@ int32_t create_filename(char** ts) {
 	time_t t;
 	time(&t);
 	struct tm *info = localtime(&t);
-	strftime(*ts, 40, "%Y-%m-%d-%H%M%S_xsnap.png", info);
+	strftime(*ts, 40, "/tmp/%Y-%m-%d-%H%M%S_xsnap.png", info);
 
 	return 0;
 }
